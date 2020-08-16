@@ -93,6 +93,10 @@ main {
     margin-top: 114px;
 }
 
+#section-1 {
+    background: white;
+}
+
 .footer {
     min-height: 150px !important;
     height: 150px !important;
