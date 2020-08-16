@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="three.r119.min.js"></script>
+        <script src="vanta.dots.min.js"></script>
+        <script src="https://kit.fontawesome.com/522ea9300c.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                });
+            });
+        </script>
+
+
+        <title>Spiffy Gaming</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div class="">Spiffy Gaming</div>
+                <div class="links">
+                    <a href="#section-1">About Us</a>
+                    <a href="#section-2">Our Talent</a>
+                    <a href="#section-3">Find Us</a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main" role="main">
+            <section id="front" class="canvas"></section>
+            <section id="section-1" class="canvas">About Us</section>
+            <section id="section-2" class="canvas">Our Talent</section>
+            <section id="section-3" class="canvas footer">
+                <i class="fab fa-twitch"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </section>
+        </main>
+    </body>
+    <script>
+        VANTA.NET({
+            el: "#main",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xff823f,
+            backgroundColor: 0x18151e,
+            points: 20.00,
+            maxDistance: 12.00,
+            spacing: 11.00
+        })
+    </script>
+</html>
