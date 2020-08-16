@@ -93,6 +93,57 @@ main {
     margin-top: 114px;
 }
 
+#section-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.faded-img {
+    position: absolute;
+    opacity: .5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section-content {
+    margin-top: 30vh;
+    width: 60vw;
+    z-index: 100;
+}
+
+.about-us {
+    width: 500px;
+}
+
+.about-us > h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.about-us > p {
+    color: rgba(255, 255, 255, .3);
+}
+
+#section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.talent-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.talent {
+    width: 250px;
+    height: 350px;
+    margin: 6px;
+    background: url("https://dummyimage.com/250x350/000000/fff&text=SpiffyG+Jody") no-repeat;
+}
+
 .footer {
     min-height: 150px !important;
     height: 150px !important;
